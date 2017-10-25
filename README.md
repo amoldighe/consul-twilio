@@ -9,7 +9,7 @@ As a pre-requisite the following is required :
 consul kv put consul-alerts/config/notifiers/twilio/
 consul kv put consul-alerts/config/notifiers/twilio/call-history/
 ```
-Please note, the below 2 keys end with '/' indicating folder 
+Please note, the above 2 keys end with '/' indicating a folder 
 
 * Add the following key-value from any consul node 
 
@@ -20,9 +20,9 @@ consul kv put consul-alerts/config/notifiers/twilio/proxy-url "http://<proxy in 
 consul kv put consul-alerts/config/notifiers/twilio/user-key "<key provided by twilio website>"
 consul kv put consul-alerts/config/notifiers/twilio/voice-xml "http://demo.twilio.com/docs/voice.xml"
 consul kv put consul-alerts/config/notifiers/twilio/xpost-url "https://api.twilio.com/2010-04-01/Accounts/<key provided by twilio website>/Calls.json"
-consul kv put consul-alerts/config/notifiers/twilio/devops-numbers "fix-number1 fix number2"
+consul kv put consul-alerts/config/notifiers/twilio/devopsoncall-numbers "fix-number1 fix number2"
 ```
-For devops-numbers, it is suggested to add them from consul dashboard using the key-value store in below format of one value per line and update the key.
+For devopsoncall-numbers, it is suggested to add them from consul dashboard using the key-value store in below format of one value per line and update the key.
 
 ```
 fix-number1
